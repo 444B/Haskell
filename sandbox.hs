@@ -1,3 +1,4 @@
+
 -- Dependencies
 import Data.List ()
 import System.IO ()
@@ -18,4 +19,10 @@ a = (1,2,2,3,4)
 c :: Bool 
 c = True 
 
-ssss
+isG :: Char -> Bool 
+isG c = c == 'b'
+
+months :: [Char]
+months = ['j','f','m','a','m','j','j' ]
+-- run the following to get back 'a'
+-- months !! 3

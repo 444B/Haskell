@@ -22,7 +22,7 @@ negNumEx = 5 + (-4)
 
 {-
 :t sqrt
-    this command in GHC will give us a breakdown of theexpected inputs and outputs
+    this command in GHC will give us a breakdown of the expected inputs and outputs
 
 *Main> :t sqrt
 sqrt :: Floating a => a -> a
