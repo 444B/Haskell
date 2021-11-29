@@ -13,11 +13,11 @@ z :: Double
 z = 1.5
 
 
-a :: (Integer, Integer, Integer, Integer, Integer)
-a = (1,2,2,3,4)
+f :: (Integer, Integer, Integer, Integer, Integer)
+f = (1,2,2,3,4)
 
-c :: Bool 
-c = True 
+t :: Bool 
+t = True 
 
 isG :: Char -> Bool 
 isG c = c == 'b'
@@ -26,3 +26,5 @@ months :: [Char]
 months = ['j','f','m','a','m','j','j' ]
 -- run the following to get back 'a'
 -- months !! 3
+
+-- TODO: Write a function that takes in 2 arguments and produces 1 integer (pytag theorem)
