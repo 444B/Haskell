@@ -1,30 +1,22 @@
+double :: Num a => a -> a
+double x = x + x
 
--- Dependencies
-import Data.List ()
-import System.IO ()
+double2 x y = x * 2 + y * 2
 
-x :: Integer
-x = 4
+doubleSmallerNumber x =
+  if x > 100
+    then x
+    else x * 2
 
-y :: [Char]
-y = "Dylan"
+conanO'Brien = "It's a-me, Conan O'Brien!"
 
-z :: Double
-z = 1.5
+lostNumbers = [8, 15, 16, 23, 42]
 
+a = []
 
-f :: (Integer, Integer, Integer, Integer, Integer)
-f = (1,2,2,3,4)
+b = [5, 4, 3, 2, 1]
 
-t :: Bool 
-t = True 
-
-isG :: Char -> Bool 
-isG c = c == 'b'
-
-months :: [Char]
-months = ['j','f','m','a','m','j','j' ]
--- run the following to get back 'a'
--- months !! 3
-
--- TODO: Write a function that takes in 2 arguments and produces 1 integer (pytag theorem)
+empty x =
+  if null x == True
+    then print "fff"
+    else print "sss"
