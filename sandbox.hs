@@ -1,4 +1,4 @@
--- starting out
+
 double :: Num a => a -> a
 double x = x + x
 
@@ -29,4 +29,5 @@ conan = "It's a-me, Conan O'Brien!"
 
 -- just testing using multiple variables in a function
 mathsfun :: Floating a => a -> a -> a -> a
-mathsfun x y z = ((x*x) + (y-(double y)))**z
+mathsfun x y z = x*x + y - double y ^ z
+
