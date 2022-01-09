@@ -1,3 +1,4 @@
+-- starting out
 double :: Num a => a -> a
 double x = x + x
 
@@ -10,6 +11,8 @@ doubleSmallerNumber x =
     then x
     else x * 2
 
+
+-- LISTS
 lostNumbers :: [Integer]
 lostNumbers = [8, 15, 16, 23, 42]
 
@@ -22,26 +25,8 @@ b = [5, 4, 3, 2, 1]
 conan :: [Char]
 conan = "It's a-me, Conan O'Brien!"
 
-empty :: Foldable t => t a -> IO ()
-empty x =
-  if null x == True
-    then print "fff"
-    else print "sss"
-
-slice :: [Char]
-slice = take 4 conan
-
-sliceoppositedirec :: [Integer]
-sliceoppositedirec = drop 3 [8, 4, 2, 1, 5, 6]
-
-scan :: (Eq a, Num a) => a -> Bool
-scan n = n `elem` [5, 4, 3, 2, 1]
-
-letters :: [Char]
-letters = ['a' .. 'z']
-
-numbers :: [Integer]
-numbers = [1 .. 20]
 
 
-loopy = cycle (["kek "])
+-- just testing using multiple variables in a function
+mathsfun :: Floating a => a -> a -> a -> a
+mathsfun x y z = ((x*x) + (y-(double y)))**z
