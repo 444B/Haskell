@@ -8,6 +8,18 @@ The purpose of this script is practice
     - a place to document and practice Haskell
     - test the applicability of Literate Programming
 
+TODO
+
+- https://www.youtube.com/watch?v=eis11j_iGMs
+- set up VIM as editor for Haskell
+- NO COPY/PASTE
+-
+IDEAS
+- test an input for < 10
+
+
+
+
 {###########################################################}
 
 --- Function examples ---
@@ -141,3 +153,48 @@ boomBangs xs = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x]
 [ x | x <- [10..20], x /= 13, x /= 15, x /= 19]  
     - all numbers from 10 to 20 that are not 13, 15 or 19
     - must satify all predicates to be included in the resulting list 
+
+
+
+
+
+
+Axy.xz
+Ax.(Ay).xz
+
+Axy.xxy
+Ax.(Ay).xxy
+
+
+(Aabc.cba)zz(Awv.w)
+    (Aa.Ab.Ac.cba)zz(Aw.Av.w)
+    (Aw.Av.w)zz
+
+(Ax.Ay.xyy)(Aa.a)b
+    Ay.(Aa.a)byy)(Aa.a)b
+    (b)b(Aa.a)b(Aa.a))
+
+(Ay.y)(Ax.xx)(Az.zq)
+    (Az.zq)(Ax.xx)
+    (Ax.xx)q)
+    qq
+
+(Az.z)(Az.zz)(Az.zy)
+    (Az.z)(Az.zz)(Az.zy)
+    (Az.zy)(Az.zz)
+    (Az.zz)y
+    yy
+
+(Az.Ay.xyy)(Ay.y)y
+    (Az.Ay.xyy)(Ay.y)y
+    ((Ay.y)(Ay.y)(Ay.y))
+    ((Ay.y))(Ay.y)(Ay.y))
+Omega divergence
+
+(Aa.aa)(Ab.ba)c
+    (Aa.aa)(Ab.ba)c
+    cc(Ab.ba)
+
+(Axyz(xz(yz))(Ax.z)Ax.a)
+    Ay.Az(Ax.az(yz))(Ax.z))
+    Ax.a(Ax.z)z)

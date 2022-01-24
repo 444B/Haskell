@@ -1,1 +1,3 @@
-What Beginner Haskell projects would you someone to that has little programing expereince? I am looking for something to practise on this coming week
+-- TODO
+-- Watch https://www.youtube.com/watch?v=eis11j_iGMs
+-- set up VIM as editor for Haskell
