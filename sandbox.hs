@@ -1,3 +1,0 @@
--- TODO
--- Watch https://www.youtube.com/watch?v=eis11j_iGMs
--- set up VIM as editor for Haskell
