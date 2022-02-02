@@ -154,3 +154,4 @@ boomBangs xs = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x]
     - all numbers from 10 to 20 that are not 13, 15 or 19
     - must satify all predicates to be included in the resulting list 
 
+ 
