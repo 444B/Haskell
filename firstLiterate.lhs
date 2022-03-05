@@ -97,7 +97,19 @@ repeat
     - take 10 (repeat 5)
         -> [5,5,5,5,5,5,5,5,5,5] 
 odd
-    - returns True on an odd number and False on an even number
+    - returns True on an odd number and False on an even number>
+makeUpperCase
+    - takes a string and returns a new string with all the letters in uppercase
+    - makeUpperCase "hello"
+        -> "HELLO"
+makeLowerCase
+    - takes a string and returns a new string with all the letters in lowercase
+    - makeLowerCase "HELLO"
+        -> "hello"
+
+{###########################################################}
+
+
 
 {##############################################################################################################################################}
 
