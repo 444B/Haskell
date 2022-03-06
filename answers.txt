@@ -1,0 +1,8 @@
+1.11
+
+Combinators
+1. \x.xxx
+2. \xy.zx
+3. \xyz.xy(zx)
+4. \xyz.xy(zxy)
+5. \xy.xy(zxy)

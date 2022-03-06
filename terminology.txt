@@ -1,0 +1,7 @@
+Lambda calculus have 3 basic components / terms:
+    - Expressions
+    - Variables
+    - Abstractions
+
+Combinators - A lambda term with no free Variables
+Divergence - when the reduction process never ends (loop)
