@@ -5,3 +5,6 @@ Lambda calculus have 3 basic components / terms:
 
 Combinators - A lambda term with no free Variables
 Divergence - when the reduction process never ends (loop)
+Reducible Expressions - Redexes. Also called Evaluation/reduction.
+    - also called Normalizing or executing an Expressions
+Parameter / argument - the values that are passed into a function
