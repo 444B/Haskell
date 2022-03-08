@@ -13,11 +13,9 @@ TODO
 - https://www.youtube.com/watch?v=eis11j_iGMs
 - set up VIM as editor for Haskell
 - NO COPY/PASTE
--
+
 IDEAS
 - test an input for < 10
-
-
 
 
 {###########################################################}
@@ -146,6 +144,7 @@ String
         -> lukesFather :: "Darth Vader"
 
 {##############################################################################################################################################}
+Refferences
 
 > doubleSmallerNumber :: (Ord a, Num a) => a -> a
 > doubleSmallerNumber x =
@@ -166,4 +165,10 @@ boomBangs xs = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x]
     - all numbers from 10 to 20 that are not 13, 15 or 19
     - must satify all predicates to be included in the resulting list 
 
- 
+
+let a = b in c
+*Is the same as saying*
+(\a -> c) b
+
+-- (dollar) is saying to evaluate everything to the right of me first
+I need to revisit this, it wasnt obvious. 
