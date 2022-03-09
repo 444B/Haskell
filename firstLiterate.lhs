@@ -172,3 +172,7 @@ let a = b in c
 
 -- (dollar) is saying to evaluate everything to the right of me first
 I need to revisit this, it wasnt obvious. 
+
+The argument is what we pass into the parameter
+
+Type cariable a in [a] is Polymorphic.
