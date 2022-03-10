@@ -70,3 +70,9 @@ waxOff x = triple x
 -- 3. concat ["<3", " Haskell"]
 -- Yes, this will compile since we are taking two lists
 -- yay it worked
+
+
+
+------------------------------------------------------------
+-- excercises page 103, 3.7
+--  

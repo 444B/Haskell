@@ -12,3 +12,11 @@ f x = x / (2 + 9)
 
 printInc' n =
     (\plusTwo -> print plusTwo) (n + 2)
+
+numList :: [Integer]
+numList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+string :: [Char]
+string = "Chupapi Munyanyo"
+
+

@@ -11,3 +11,7 @@ Reducible Expressions - Redexes. Also called Evaluation/reduction.
     - also called Normalizing or executing an Expressions
 
 Parameter / argument - the values that are passed into a function
+
+Lists are composed of "Elements"
+
+
