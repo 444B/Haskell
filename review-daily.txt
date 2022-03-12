@@ -1,0 +1,5 @@
+Parameter / argument - the values that are passed into a function
+
+Lists are composed of "Elements"
+
+

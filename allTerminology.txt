@@ -1,0 +1,106 @@
+1.13 Definitions
+================
+    1. The lambda in lambda calculus is the greek letter 𝜆 used to introduce, or abstract, arguments for binding in an expression.
+
+    2. A lambda abstraction is an anonymous function or lambda term.
+(𝜆𝑥.𝑥 + 1)
+Here the head of the lambda 𝑥. is abstracting out the term 𝑥 + 1.
+We can apply it to any 𝑥 and recompute different results for each
+𝑥 we applied the lambda to.
+
+    3. Application is how one evaluates or reduces lambdas, this binds
+the argument to whatever the lambda was applied to. Computations are performed in lambda calculus by applying lambdas to
+arguments until you run out of arguments to apply lambdas to.
+(𝜆𝑥.𝑥)1
+This example reduces to 1, the identity lambda 𝑥.𝑥 was applied
+to the value 1, 𝑥 was bound to 1, and the lambda’s body is just
+𝑥, so it just kicks the 1 out. In a sense, applying the lambda 𝑥.𝑥
+consumed it. We reduced the amount of structure we had.
+
+    4. Lambda calculus is a formal system for expressing programs in
+terms of abstraction and application.
+
+    5. Normal order is a common evaluation strategy in lambda calculi.
+Normal order means evaluating (ie, applying or beta reducing)
+the leftmost outermost lambdas first, evaluating terms nested
+within after you’ve run out of arguments to apply. Normal order
+isn’t how Haskell code is evaluated - it’s call-by-need instead. We’ll
+explain this more later. Answers to the evaluation exercises were
+written in normal order.
+
+2.14 Definitions
+================
+    1. The terms argument and parameter are often used interchangeably. However, it is worthwhile to understand the distinction.
+A parameter, or formal parameter, represents a value that will be
+passed to the function when the function is called. Thus, parameters are usually variables. An argument is an input value the
+function is applied to. A function’s parameter is bound to the
+value of an argument when the function is applied to that argument. For example, in f x = x + 2 which takes an argument
+and returns that value added to 2, 𝑥 is the one parameter of our
+function. We run the code by applying 𝑓 to some argument. If
+the argument we passed to the parameter 𝑥 were 2, our result
+would be 4. However, arguments can themselves be variables or
+be expressions that include variables, thus the distinction is not
+always clear. When we use “parameter” in this book, it will always
+be referring to formal parameters, usually in a type signature,
+but we’ve taken the liberty of using “argument” somewhat more
+loosely.
+
+    2. An expression is a combination of symbols that conforms to syntactic rules and can be evaluated to some result. In Haskell, an
+expression is a well-structured combination of constants, variables, and functions. While irreducible constants are technically
+expressions, we usually refer to those as “values”, so we usually
+mean “reducible expression” when we use the term expression.
+
+    3. A redex is a reducible expression.
+
+    4. A value is an expression that cannot be reduced or evaluated any
+further. 2 * 2 is an expression, but not a value, whereas what it
+evaluates to, 4, is a value.
+
+    5. A function is a mathematical object whose capabilities are limited
+to being applied to an argument and returning a result. Functions
+can be described as a list of ordered pairs of their inputs and the
+resulting outputs, like a mapping. Given the function f x = x
++ 2 applied to the argument 2, we would have the ordered pair
+(2, 4) of its input and output.
+
+    6. Infix notation is the style used in arithmetic and logic. Infix means
+that the operator is placed between the operands or arguments.
+An example would be the plus sign in an expression like 2 + 2.
+
+    7. Operators are functions that are infix by default. In Haskell, operators must use symbols and not alphanumeric characters.
+
+    8. Syntactic sugar is syntax within a programming language designed
+to make expressions easier to write or read.
+
+
+3.8 Definitions
+===============
+    1. A String is a sequence of characters. In Haskell, String is represented by a linked-list of Char values, aka [Char].
+
+    2. A type or datatype is a classification of values or data. Types in
+Haskell determine what values are members of it or inhabit it.
+Unlike in other languages, datatypes in Haskell by default do not
+delimit the operations that can be performed on that data.
+
+    3. Concatenation is the joining together of sequences of values. Often
+in Haskell this is meant with respect to the [] or “List” datatype,
+which also applies to String which is [Char]. The concatenation
+function in Haskell is (++) which has type [a] -> [a] -> [a].
+For example:
+Prelude> "tacos" ++ " " ++ "rock"
+"tacos rock"
+
+    4. Scope is where a variable referred to by name is valid. Another
+word used with the same meaning is visibility, because if a variable
+isn’t visible it’s not in scope.
+
+    5. Local bindings are bindings local to particular expressions. The
+primary delineation here from global bindings is that local bindings cannot be imported by other programs or modules.
+
+    6. Global or top level bindings in Haskell mean bindings visible to
+all code within a module and, if made available, can be imported
+by other modules or programs. Global bindings in the sense
+that a variable is unconditionally visible throughout an entire
+program do not exist in Haskell.
+    7. Data structures are a way of organizing data so that the data can
+be accessed conveniently or efficiently.
