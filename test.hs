@@ -9,7 +9,6 @@ perimeter x y = x * 2 + y * 2
 f :: Fractional a => a -> a
 f x = x / (2 + 9)
 
-
 printInc' n =
     (\plusTwo -> print plusTwo) (n + 2)
 

@@ -144,35 +144,6 @@ String
         -> lukesFather :: "Darth Vader"
 
 {##############################################################################################################################################}
-Refferences
-
-> doubleSmallerNumber :: (Ord a, Num a) => a -> a
-> doubleSmallerNumber x =
->  if x > 100
->    then x
->    else x * 2
-
-In the above we see that "IF" statements in Haskell must return an expression
-
---- List Comprehensions ---
-[ x | x <- [50..100], x `mod` 7 == 3] 
-[52,59,66,73,80,87,94]  
-
-boomBangs xs = [ if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x] 
-["BOOM!","BOOM!","BANG!","BANG!"]  
-
-[ x | x <- [10..20], x /= 13, x /= 15, x /= 19]  
-    - all numbers from 10 to 20 that are not 13, 15 or 19
-    - must satify all predicates to be included in the resulting list 
 
 
-let a = b in c
-*Is the same as saying*
-(\a -> c) b
 
--- (dollar) is saying to evaluate everything to the right of me first
-I need to revisit this, it wasnt obvious. 
-
-The argument is what we pass into the parameter
-
-Type cariable a in [a] is Polymorphic.

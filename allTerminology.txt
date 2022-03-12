@@ -1,6 +1,7 @@
 1.13 Definitions
 ================
-    1. The lambda in lambda calculus is the greek letter 𝜆 used to introduce, or abstract, arguments for binding in an expression.
+    1. The lambda in lambda calculus is the greek letter 𝜆 used to 
+    introduce, or abstract, arguments for binding in an expression.
 
     2. A lambda abstraction is an anonymous function or lambda term.
 (𝜆𝑥.𝑥 + 1)
@@ -9,8 +10,9 @@ We can apply it to any 𝑥 and recompute different results for each
 𝑥 we applied the lambda to.
 
     3. Application is how one evaluates or reduces lambdas, this binds
-the argument to whatever the lambda was applied to. Computations are performed in lambda calculus by applying lambdas to
-arguments until you run out of arguments to apply lambdas to.
+the argument to whatever the lambda was applied to. Computations are 
+performed in lambda calculus by applying lambdas to arguments until you 
+run out of arguments to apply lambdas to.
 (𝜆𝑥.𝑥)1
 This example reduces to 1, the identity lambda 𝑥.𝑥 was applied
 to the value 1, 𝑥 was bound to 1, and the lambda’s body is just
@@ -30,13 +32,15 @@ written in normal order.
 
 2.14 Definitions
 ================
-    1. The terms argument and parameter are often used interchangeably. However, it is worthwhile to understand the distinction.
+    1. The terms argument and parameter are often used interchangeably. 
+    However, it is worthwhile to understand the distinction.
 A parameter, or formal parameter, represents a value that will be
-passed to the function when the function is called. Thus, parameters are usually variables. An argument is an input value the
-function is applied to. A function’s parameter is bound to the
-value of an argument when the function is applied to that argument. For example, in f x = x + 2 which takes an argument
-and returns that value added to 2, 𝑥 is the one parameter of our
-function. We run the code by applying 𝑓 to some argument. If
+passed to the function when the function is called. Thus, parameters are 
+usually variables. An argument is an input value the function is applied to. 
+A function’s parameter is bound to the value of an argument when the function 
+is applied to that argument. For example, in f x = x + 2 
+which takes an argument and returns that value added to 2, 𝑥 is the one parameter 
+of our function. We run the code by applying 𝑓 to some argument. If
 the argument we passed to the parameter 𝑥 were 2, our result
 would be 4. However, arguments can themselves be variables or
 be expressions that include variables, thus the distinction is not
@@ -45,10 +49,11 @@ be referring to formal parameters, usually in a type signature,
 but we’ve taken the liberty of using “argument” somewhat more
 loosely.
 
-    2. An expression is a combination of symbols that conforms to syntactic rules and can be evaluated to some result. In Haskell, an
-expression is a well-structured combination of constants, variables, and functions. While irreducible constants are technically
-expressions, we usually refer to those as “values”, so we usually
-mean “reducible expression” when we use the term expression.
+    2. An expression is a combination of symbols that conforms to syntactic rules 
+and can be evaluated to some result. In Haskell, an expression is a well-structured
+ combination of constants, variables, and functions. While irreducible constants are
+ technically expressions, we usually refer to those as “values”, so we usually mean 
+ “reducible expression” when we use the term expression.
 
     3. A redex is a reducible expression.
 
@@ -67,7 +72,8 @@ resulting outputs, like a mapping. Given the function f x = x
 that the operator is placed between the operands or arguments.
 An example would be the plus sign in an expression like 2 + 2.
 
-    7. Operators are functions that are infix by default. In Haskell, operators must use symbols and not alphanumeric characters.
+    7. Operators are functions that are infix by default. In Haskell, operators must use 
+symbols and not alphanumeric characters.
 
     8. Syntactic sugar is syntax within a programming language designed
 to make expressions easier to write or read.
@@ -75,7 +81,8 @@ to make expressions easier to write or read.
 
 3.8 Definitions
 ===============
-    1. A String is a sequence of characters. In Haskell, String is represented by a linked-list of Char values, aka [Char].
+    1. A String is a sequence of characters. In Haskell, String is represented 
+by a linked-list of Char values, aka [Char].
 
     2. A type or datatype is a classification of values or data. Types in
 Haskell determine what values are members of it or inhabit it.
@@ -95,7 +102,8 @@ word used with the same meaning is visibility, because if a variable
 isn’t visible it’s not in scope.
 
     5. Local bindings are bindings local to particular expressions. The
-primary delineation here from global bindings is that local bindings cannot be imported by other programs or modules.
+primary delineation here from global bindings is that local bindings cannot be 
+imported by other programs or modules.
 
     6. Global or top level bindings in Haskell mean bindings visible to
 all code within a module and, if made available, can be imported
