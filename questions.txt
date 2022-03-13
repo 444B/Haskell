@@ -1,0 +1,3 @@
+1. What is the difference between a Double and Float data type?
+    - Answer: Double has twice the amount of precision. We should not use Float in serious apps
+2. What is the difference between a [Char] and String data type?

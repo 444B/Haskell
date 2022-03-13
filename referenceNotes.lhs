@@ -111,23 +111,40 @@ makeLowerCase
 
 {##############################################################################################################################################}
 
---- Types ---
-Int 
+--- ( Type Constructors ) ---
+-- Num typeclases --
+Int (Should not be used unless performance needed in hardware limited)
     - Machine sized integers 
+    - Limits are -9,223,372,036,854,775,808..9,223,372,036,854,775,807
         -> currentyear :: Int 
         -> currentYear = 2021
 Integer
     - Arbitrary precison integers
         -> atomsInUniverse :: Integer
         -> atomsInUniverse 7 * (10 ^ 27)
-Double 
-    - Double Precision Floating Point
-        -> pi1 :: Double 
-        -> pi1 = 3.14
 Float
     - Single Precision Floating Point
         -> pi1 :: Float
         -> pi1 = 3.14
+Double 
+    - Double Precision Floating Point
+        -> pi1 :: Double 
+        -> pi1 = 3.14
+Rational
+    - fractional number that represents ratio of two integers
+        -> rationalFraction :: Rational
+        -> rationalFraction = 1 / 2
+            -> 100 * rationalFraction
+            -> 50 % 1
+Scientific
+    - space efficient scientific number type. 
+    - coefficient stored as Integer, Exponent stored as Int
+    - must be imported. 
+        -> import Data.Scientific as Scientific
+        -> scientificValue :: Scientific
+        -> scientificValue = 12345678901234567890
+            -> 1.234567890123456789e19
+-- /Num typeclases --
 Booleans
     - Logic 
         -> isHaskellTheBest :: Bool 
@@ -137,7 +154,7 @@ Booleans
 Char 
     - Unicode Characters 
         -> myNameStartsWith :: Char 
-        ->myNameStartsWith = 'F'
+        -> myNameStartsWith = 'F'
 String 
     - List of characters
         -> lukesFather :: String
@@ -145,5 +162,13 @@ String
 
 {##############################################################################################################################################}
 
+--- ( Typeclasses ) ---
+Num
 
+{##############################################################################################################################################}
+
+-- Because apparently unlinter needs at least one line of actual haskell to be compiled
+
+> x :: Integer
+> x = 420
 
