@@ -124,6 +124,7 @@ Integer
         -> atomsInUniverse 7 * (10 ^ 27)
 Float
     - Single Precision Floating Point
+    - We almost never want a float
         -> pi1 :: Float
         -> pi1 = 3.14
 Double 

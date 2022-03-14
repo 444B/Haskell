@@ -11,3 +11,5 @@ let a = b in c
 I need to revisit this, it wasnt obvious. 
 
 Type cariable a in [a] is Polymorphic.
+
+Num is a **Superclass* of Frantional typeclasses
