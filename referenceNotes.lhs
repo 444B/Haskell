@@ -165,6 +165,9 @@ String
 
 --- ( Typeclasses ) ---
 Num
+Ord - everything that can be ordered
+Eq - everything that can be compared
+Bool - Boolean Values
 
 {##############################################################################################################################################}
 

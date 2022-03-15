@@ -13,3 +13,12 @@ I need to revisit this, it wasnt obvious.
 Type cariable a in [a] is Polymorphic.
 
 Num is a **Superclass* of Frantional typeclasses
+
+Term Level ( Where values live and is the code that executes )
+    - Variables
+    - Data constructors
+
+Type Level ( used during static analysis and verification )
+    - Type Variables
+    - Type Constructors
+    - Type Classes

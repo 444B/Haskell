@@ -1,4 +1,3 @@
-import Data.Scientific as Scientific
 -- template examples for REPL testing --
 double :: Num a => a -> a
 double x = x * 2
