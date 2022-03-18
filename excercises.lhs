@@ -29,3 +29,33 @@ into a source file. Load it and run it in GHCi to make sure you
 got it right.
 
 - Works :)
+
+Page 121 Excercises
+
+1. not True && true
+-- False
+
+
+2. not (x = 6)
+We need to first bring x into scope
+
+> x :: Integer 
+> x = 6
+
+now we can say not (x == 6)
+-- False
+
+3. (1 * 2) > 5
+-- False
+
+
+4. [Merry] > [Happy]
+-- error since they are not formatted as strings. 
+Once we fix it to say ["Merry"] > ["Happy"], we get
+-- True
+
+
+5. [1, 2, 3] ++ "look at me!"
+-- projected error. we can now concatenate a list of integers and a string
+it works if we say "[1, 2, 3]" ++ "look at me!"
+-- "[1, 2, 3]look at me!"

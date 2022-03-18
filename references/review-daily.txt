@@ -12,7 +12,7 @@ I need to revisit this, it wasnt obvious.
 
 Type cariable a in [a] is Polymorphic.
 
-Num is a **Superclass* of Frantional typeclasses
+Num is a **Superclass* of Fractional typeclasses
 
 Term Level ( Where values live and is the code that executes )
     - Variables
