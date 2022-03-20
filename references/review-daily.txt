@@ -22,3 +22,5 @@ Type Level ( used during static analysis and verification )
     - Type Variables
     - Type Constructors
     - Type Classes
+
+You cant add to tuples but you can add to lists
