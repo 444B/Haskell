@@ -3,3 +3,4 @@
 2. What is the difference between a [Char] and String data type?
 3. What is Fourier Series and how does it relate to computing? what is "Twos Complement"?
 4. Looks more into how Map and Filter work in terms of comp sci
+5. Look more into Set theory and how it relates to Haskells Type system
