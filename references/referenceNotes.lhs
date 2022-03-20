@@ -171,8 +171,53 @@ Bool - Boolean Values
 
 {##############################################################################################################################################}
 
--- Because apparently unlinter needs at least one line of actual haskell to be compiled
+Cool examples
 
-> x :: Integer
-> x = 420
+Takes in 1-10 and returns 10 lists
 
+map (\x -> [x]) [ 1 .. 10 ] 
+[[1],[2],[3],[4],[5],[6],[7],[8],[9],[10]]
+
+map (> 3) [ 1 .. 10 ]
+[False,False,False,True,True,True,True,True,True,True]
+
+filter
+filet even [1..10]
+[2.4.6.8.10]
+
+filter (>32) [1..10]
+[]
+
+filter (\x -> x `mod` 3 == 0`) [1.10]
+
+map definition
+map :: (a -> b) -> [a] -> [b]
+map _ [] = []
+map f (x :xs) = f x : map f xs
+
+filter definition
+filter :: (a -> Bool) -> [a] -> [a]
+filter _ [] = []
+filter p (x:xs)
+ | p x = x : filter p xs
+ | otherwise = filter p xs
+
+ all
+ returns True is all the elements in the list
+ satisfy the predicate
+ all (> 2) [3..10]
+ True
+
+ all definition
+ all :: ( a -> Bool) -> [a] -> Bool
+ all _ [] = True
+ all p (x:xs)
+  | npot (p x) = False
+  | otherwise = all p xs
+
+
+another way for all
+
+> all' :: ( a -> Bool) -> [a] -> Bool
+> all' _ [] = True
+> all' p (x:xs) = p x && all p xs

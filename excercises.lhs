@@ -154,3 +154,63 @@ snd:
 > f x y = ((snd  x, snd y),(fst x, fst y))
 
 -- Damn that actually worked
+
+Fixing Syntax
+1. Here, we want a function that adds 1 to the length of a string
+argument and returns that result.
+x = (+)
+F xs = w 'x' 1  -- change function to lower case, remove '' otherwise x is a character
+where w = length xs
+
+> xadd = (+)
+> f' xs = w `xadd` 1
+>   where w = length xs
+
+
+2. This is supposed to be the identity function, id.
+x'' :: Int
+\x'' -> x'' 
+-- cant figure this out man
+
+-- -- turns out the answer is just 
+id x = x
+so why try doing what appears to be a lambda calc. on it? Not a good q
+
+3. When fixed, this function will return 1 from the value [1, 2, 3].
+Hint: you may need to refer back to the section about variables
+conventions in “Hello Haskell” to refresh your memory of this
+notation.
+\ x : xs -> x
+
+
+4. When fixed, this function will return 1 from the value (1, 2)
+f (a b) = A
+
+> fone (a, b) = a
+
+Match the function names to their types
+1. Which of the following types is the type of show?
+a) show a => a -> String
+b) Show a -> a -> String
+c) Show a => a -> String -- this one
+
+
+2. Which of the following types is the type of (==)?
+a) a -> a -> Bool
+b) Eq a => a -> a -> Bool -- this one
+c) Eq a -> a -> a -> Bool
+d) Eq a => A -> Bool
+
+
+3. Which of the following types is the type of fst?
+a) (a, b) -> a -- this one
+b) b -> a
+c) (a, b) -> b
+
+
+4. Which of the following types is the type of (+)?
+a) Num a -> a -> a -> Bool
+b) Num a => a -> a -> Bool
+c) num a => a -> a -> a
+d) Num a => a -> a -> a -- this one
+e) a -> a -> a
