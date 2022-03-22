@@ -17,12 +17,3 @@ e) (<) :: Ord a => a -> a -> Bool
 > nonsense False = 31337
 
 
-Lets do these excercises. These last few examples melted my brain
-
-let f :: a -> a -> a -> a; f = undefined
-let x :: Char; x = undefined
-:t f x
-
-let g :: a -> b -> c -> b; f = undefined
-
-:t f x
