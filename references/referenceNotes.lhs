@@ -170,6 +170,16 @@ Eq - everything that can be compared
 Bool - Boolean Values
 
 {##############################################################################################################################################}
+Polymorphism
+
+Type Signatures have 3 kinds:
+    - Concrete
+    - Constrained Polymorphic (Ad-hoc)
+    - Parametrically polymorphic
+
+
+
+{##############################################################################################################################################}
 
 Cool examples
 
