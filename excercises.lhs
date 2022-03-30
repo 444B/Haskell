@@ -109,3 +109,29 @@ myAlph :: Char -> Bool -- Yesssss boiiii
 
 -----------------------------------------------------
 Final chapter excercises - page 163
+
+Multiple choice
+1. A value of type [a] is
+a) a list of alphabetic characters
+b) a list of lists
+Xc) a list whose elements are all of some type 𝑎
+d) a list whose elements are all of different types
+
+2. A function of type [[a]] -> [a] could
+Xa) take a list of strings as an argument
+b) transform a character into a string
+c) transform a string in to a list of strings
+d) take two arguments
+
+3. A function of type [a] -> Int -> a
+a) takes one argument
+Xb) returns one element of type 𝑎 from a list
+c) must return an Int value
+d) is completely fictional
+
+4. A function of type (a, b) -> a
+a) takes a list argument and returns a Char value
+b) has zero arguments
+Xc) takes a tuple argument and returns the first value
+d) requires that 𝑎 and 𝑏 be of different types
+
