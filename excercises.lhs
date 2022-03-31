@@ -135,3 +135,15 @@ b) has zero arguments
 Xc) takes a tuple argument and returns the first value
 d) requires that 𝑎 and 𝑏 be of different types
 
+> bigNum = (^) 5 10
+> wahoo = bigNum * 10
+
+> functionH :: [a] -> a
+> functionH (x:_) = x
+
+
+> functionC :: Ord a => a -> a -> Bool
+> functionC x y = if (x > y) then True else False
+
+functionS :: (a, b) -> b
+> functionS (x, y) = y
