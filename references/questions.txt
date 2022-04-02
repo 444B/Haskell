@@ -6,3 +6,4 @@
 5. Look more into Set theory and how it relates to Haskells Type system
 6. Why Haskell for Cardano?
 7. Look into  Damas-Hindley-Milner Type system
+8. Look into Higher functions
