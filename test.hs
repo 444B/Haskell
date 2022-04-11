@@ -18,3 +18,5 @@ initialInvestment :: Double
 initialInvestment = buyPrice * buyAmount
 
 profit sellPrice = ( buyAmount * sellPrice ) - initialInvestment
+
+
